@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebackground"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/tvHomeAgileApes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/windlass"
+        android:text="Agile Apes"
+
+        android:textAlignment="center"
+        android:textColor="@color/Brown"
+        android:textSize="72sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <ImageView
+        android:id="@+id/ivHomeMonkeyCartoonClipArt"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHomeAgileApes"
+        app:srcCompat="@drawable/monkeycartoonclipart" />
+
+    <Button
+        android:id="@+id/btHomePlay"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="107dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="@font/windlass"
+        android:onClick="launchQuizScreen"
+        android:text="Play"
+        android:textAlignment="center"
+        android:textColor="@color/Brown"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/ivHomeBananaCartoon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btHomeSettings" />
+
+    <ImageView
+        android:id="@+id/ivHomeBananaCartoon"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvHomeBananaNumber"
+        app:srcCompat="@drawable/bananacartoon" />
+
+    <TextView
+        android:id="@+id/tvHomeBananaNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/windlass"
+        android:textAlignment="textStart"
+        android:textColor="@color/Brown"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHomeBananaCartoon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivHomeBananaCartoon" />
+
+    <ImageButton
+        android:id="@+id/btHomeSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="launchSettingsScreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivHomeMonkeyCartoonClipArt"
+        app:srcCompat="@drawable/settings" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settingsbackground"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/tvSettingsVishalNomula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="58dp"
+        android:fontFamily="@font/agilesansregular"
+        android:text="Vishal Nomula"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettingsAjayMariswamy" />
+
+    <TextView
+        android:id="@+id/tvSettingsSrishtiJain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="89dp"
+        android:fontFamily="@font/agilesansregular"
+        android:text="Srishti Jain"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettingsVishalNomula" />
+
+    <TextView
+        android:id="@+id/tvSettingsAjayMariswamy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/agilesansregular"
+        android:text="Ajay Mariswamy"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettingsCreatedBy" />
+
+    <TextView
+        android:id="@+id/tvSettingsSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/windlass"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@color/Brown"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSettingsCreatedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="99dp"
+        android:fontFamily="@font/agilesansregular"
+        android:text="Created by"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettingsSettings" />
+
+    <TextView
+        android:id="@+id/tvSettingsVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="167dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="261dp"
+        android:fontFamily="@font/agilesansregular"
+        android:text="Version 1.0"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettingsSrishtiJain" />
+
+    <ImageButton
+        android:id="@+id/btSettingsArrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="launchHomeScreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSettingsSettings"
+        app:srcCompat="@drawable/arrowback" />
+
+</android.support.constraint.ConstraintLayout>

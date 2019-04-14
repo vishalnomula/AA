@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settingsbackground"
+    tools:context=".IncorrectAnswerActivity">
+
+    <Button
+        android:id="@+id/btIncorrectAnswerNext"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="152dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="@font/windlass"
+        android:onClick="goToQuiz"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textColor="@color/Brown"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIncorrectAnswerCorrectAnswer" />
+
+    <TextView
+        android:id="@+id/tvIncorrectAnswerIncorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="125dp"
+        android:fontFamily="@font/windlass"
+        android:text="Incorrect!"
+        android:textAlignment="center"
+        android:textColor="@color/Brown"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvIncorrectAnswerUserAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="31dp"
+        android:fontFamily="@font/tacobox_"
+        android:text="user answer"
+        android:textColor="@color/Black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIncorrectAnswerIncorrect" />
+
+    <ImageView
+        android:id="@+id/ivIncorrectAnswerBananaCartoon"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIncorrectAnswerUserAnswer"
+        app:srcCompat="@drawable/bananacartoon" />
+
+    <TextView
+        android:id="@+id/tvIncorrectAnswerBananasGained"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/windlass"
+        android:text="- 1"
+        android:textColor="@color/Brown"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivIncorrectAnswerBananaCartoon"
+        app:layout_constraintStart_toEndOf="@+id/ivIncorrectAnswerBananaCartoon"
+        app:layout_constraintTop_toTopOf="@+id/ivIncorrectAnswerBananaCartoon"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/tvIncorrectAnswerCorrectAnswerIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="104dp"
+        android:fontFamily="@font/windlass"
+        android:text="Correct Answer"
+        android:textColor="@color/Brown"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivIncorrectAnswerBananaCartoon" />
+
+    <TextView
+        android:id="@+id/tvIncorrectAnswerCorrectAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/tacobox_"
+        android:text="correct answer"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIncorrectAnswerCorrectAnswerIs" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/ivIncorrectAnswerSadMonkeyTransparentBackground"
+        android:layout_width="193dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="109dp"
+        android:src="@drawable/sadmonkeytransparentbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btIncorrectAnswerNext" />
+
+</android.support.constraint.ConstraintLayout>
