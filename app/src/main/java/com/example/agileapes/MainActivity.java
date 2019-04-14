@@ -18,5 +18,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myIntent);
     }
 
-    // hello vishal
+    // hello ajay
 }
