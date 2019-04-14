@@ -89,14 +89,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
         android:fontFamily="@font/windlass"
-        android:text="Score"
+        android:text="0"
         android:textColor="@color/Brown"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivQuizBananaCartoon"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ivQuizBananaCartoon"
+
         app:layout_constraintVertical_bias="0.0" />
+
 
 </android.support.constraint.ConstraintLayout>

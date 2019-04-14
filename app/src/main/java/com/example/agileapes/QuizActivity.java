@@ -81,12 +81,12 @@ public class QuizActivity extends AppCompatActivity {
 
     public void getQanda() {
 
-        qandaArrayList.add(new Qanda("_______ are common solutions to common problems where the solution is ineffective and may result in undesired consequences.", "Antipatterns"));
-        qandaArrayList.add(new Qanda("_______ involves team members with different perspectives (customer, development, testing) collaborating to write acceptance tests in advance of implementing the corresponding functionality.", "Acceptance Test Driven Development"));
-        qandaArrayList.add(new Qanda("_______ is a practice where members of the team discuss the expected behavior of a system in order to build a shared understanding of expected functionality.", "Behavior Driven Development"));
-        qandaArrayList.add(new Qanda("_______ and burnup charts track the amount of output (in terms of hours, story points, or backlog items) a team has completed across an iteration or a project.", "Burndown Charts"));
-        qandaArrayList.add(new Qanda("_______ is the ability of an organization to sense changes internally or externally and respond accordingly in order to deliver value to its customers.", "Business Agility"));
-        qandaArrayList.add(new Qanda("_______ is the explicit convention that every team member can make changes to any code file as necessary: either to complete a development task, to repair a defect, or to improve the code's overall structure.", "Collective Code Ownership"));
+        qandaArrayList.add(new Qanda("_______ are common solutions to common problems where the solution is ineffective and may result in undesired consequences.", "antipatterns"));
+        qandaArrayList.add(new Qanda("_______ involves team members with different perspectives (customer, development, testing) collaborating to write acceptance tests in advance of implementing the corresponding functionality.", "acceptance test driven development"));
+        qandaArrayList.add(new Qanda("_______ is a practice where members of the team discuss the expected behavior of a system in order to build a shared understanding of expected functionality.", "behavior driven development"));
+        qandaArrayList.add(new Qanda("_______ and burnup charts track the amount of output (in terms of hours, story points, or backlog items) a team has completed across an iteration or a project.", "burndown charts"));
+        qandaArrayList.add(new Qanda("_______ is the ability of an organization to sense changes internally or externally and respond accordingly in order to deliver value to its customers.", "business agility"));
+        qandaArrayList.add(new Qanda("_______ is the explicit convention that every team member can make changes to any code file as necessary: either to complete a development task, to repair a defect, or to improve the code's overall structure.", "collective code ownership"));
 
     }
 
@@ -97,7 +97,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
     public void checkAnswer() {
-        String answer = etQuizAnswer.getText().toString().trim();
+        String answer = etQuizAnswer.getText().toString().trim().toLowerCase();
 
         if (answer.equals(qandaArrayList.get(currentPosition).getAnswer())) {
             Log.e("answer", "right");
@@ -108,7 +108,7 @@ public class QuizActivity extends AppCompatActivity {
             etQuizAnswer.setText("");
 
 
-           // startActivity(new Intent(getBaseContext(), CorrectAnswerActivity.class));
+         startActivity(new Intent(getBaseContext(), CorrectAnswerActivity.class));
 
 
         } else {
