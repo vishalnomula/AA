@@ -22,7 +22,7 @@ public class QuizActivity extends AppCompatActivity {
     TextView tvQuizScore;
 
     int currentPosition = 0;
-    int bananas = 6;
+    int bananas = 0;
 
 
     @Override
@@ -53,6 +53,21 @@ public class QuizActivity extends AppCompatActivity {
                 checkAnswer();
             }
         });
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String value = extras.getString("my_variable");
+            TextView tvQuizScore = (TextView) findViewById(R.id.tvQuizScore);
+            tvQuizScore.setText(value);
+        }
+
+
+
     }
 
     public void goBackToHomeScreen(View v) {

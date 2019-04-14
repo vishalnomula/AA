@@ -10,7 +10,7 @@ public class HomeActivity extends AppCompatActivity {
 
 TextView tvHomeBananaNumber;
 
-//Random change
+String homeActivityBananas;
 
 
 
@@ -30,6 +30,7 @@ TextView tvHomeBananaNumber;
         if (bundle != null) {
             Integer bananas = bundle.getInt("bananas");
             String bananastext = bananas.toString();
+            homeActivityBananas = bananastext;
 
             TextView txtView = (TextView) findViewById(R.id.tvHomeBananaNumber);
             txtView.setText(bananastext);
@@ -50,6 +51,11 @@ TextView tvHomeBananaNumber;
 //        Intent intent = new Intent(HomeActivity.this, QuizActivity.class);
 //        intent.putExtra("Score", currentPosition);
         startActivity(myIntent);
+
+        Intent i = new Intent(getApplicationContext(), QuizActivity.class);
+        i.putExtra("my_variable", homeActivityBananas);
+        startActivity(i);
+
     }
 
 
