@@ -53,6 +53,7 @@
         android:layout_marginEnd="31dp"
         android:fontFamily="@font/tacobox_"
         android:text="user answer"
+        android:textAlignment="center"
         android:textColor="@color/Black"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"

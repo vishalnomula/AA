@@ -68,7 +68,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/windlass"
-        android:text="0"
         android:textAlignment="textStart"
         android:textColor="@color/Brown"
         android:textSize="36sp"

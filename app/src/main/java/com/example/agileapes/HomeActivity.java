@@ -5,40 +5,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
 
-TextView tvHomeBananaNumber;
-
-String homeActivityBananas;
 
 
-
+//Toast.makeText(getApplicationContext(), "onCreate", Toast.LENGTH_SHORT).show();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        TextView tvHomeBananaNumber = findViewById(R.id.tvHomeBananaNumber);
+        tvHomeBananaNumber.setText("" + Global.bananas);
 
     }
-
-    @Override
-    public void onResume(){
-        super.onResume();
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-            Integer bananas = bundle.getInt("bananas");
-            String bananastext = bananas.toString();
-            homeActivityBananas = bananastext;
-
-            TextView txtView = (TextView) findViewById(R.id.tvHomeBananaNumber);
-            txtView.setText(bananastext);
-
-        }
-
-    }
-
 
     public void launchSettingsScreen(View v) {
         Intent myIntent = new Intent(getBaseContext(), SettingsActivity.class);
@@ -47,17 +30,7 @@ String homeActivityBananas;
 
     public void launchQuizScreen(View v) {
         Intent myIntent = new Intent(getBaseContext(), QuizActivity.class);
-//        tvHomeBananaNumber = findViewById(R.id.tvHomeBananaNumber);
-//        Intent intent = new Intent(HomeActivity.this, QuizActivity.class);
-//        intent.putExtra("Score", currentPosition);
         startActivity(myIntent);
-
-        Intent i = new Intent(getApplicationContext(), QuizActivity.class);
-        i.putExtra("my_variable", homeActivityBananas);
-        startActivity(i);
-
     }
-
-
 
 }
